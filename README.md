@@ -15,6 +15,9 @@ Results for known styles but novel contents:<br>
 Results for novel styles and novel contents:<br>
 ![](https://github.com/zhyxun/Separating-Style-and-Content-for-Generalized-Style-Transfer/blob/master/images/area4.png)<br>
 
+Citation
+----
+If you find this code useful for your research, please cite the paper:<br>
 @inproceedings{zhang2018separating,<br>
   title={Separating style and content for generalized style transfer},<br>
   author={Zhang, Yexun and Zhang, Ya and Cai, Wenbin},<br>
