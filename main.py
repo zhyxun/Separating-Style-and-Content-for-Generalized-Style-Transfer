@@ -6,16 +6,12 @@ import json
 from train import *
 from test import *
 import random
-######################################
-# this is the version with discriminator and based on the stylebank
-# this version does not resize the images and all images used are original size
-############################################################
-
-# if tf.gfile.Exists(a.output_dir):
-#     tf.gfile.DeleteRecursively(a.output_dir)
-#     tf.gfile.MakeDirs(a.output_dir)
 
 def main():
+
+    if tf.gfile.Exists(a.output_dir):
+        tf.gfile.DeleteRecursively(a.output_dir)
+        tf.gfile.MakeDirs(a.output_dir)
 
     if a.seed is None:
         a.seed = random.randint(0, 2**31 - 1)
@@ -39,6 +35,3 @@ def main():
         test()
 
 main()
-
-
-
